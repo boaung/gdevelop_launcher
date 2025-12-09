@@ -1,1 +1,14 @@
-{}
+{
+"doctype": "DocType",
+"name": "GDevelop Game",
+"module": "GDevelop Launcher",
+"custom": 1,
+"fields": [
+{"fieldname": "title", "label": "Title", "fieldtype": "Data", "reqd": 1},
+{"fieldname": "slug", "label": "Slug", "fieldtype": "Data", "read_only": 1},
+{"fieldname": "zip_file", "label": "Game ZIP File", "fieldtype": "Attach", "options": "", "reqd": 1},
+{"fieldname": "index_url", "label": "Index URL", "fieldtype": "Data", "read_only": 1},
+{"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Draft\nPublished\nError", "default": "Draft"}
+],
+"permissions": [{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}]
+}

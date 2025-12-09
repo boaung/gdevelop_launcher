@@ -1,1 +1,13 @@
-<!-- REPLACE_WITH_REAL_PAGE_TEMPLATE -->
+{%
+set games = frappe.call('gdevelop_launcher.api.list_games')
+%}
+
+
+<div class="container">
+<h1>Available Games</h1>
+<div id="games-list">
+{% for g in games %}
+{% include 'templates/includes/game_card.html' with game=g %}
+{% endfor %}
+</div>
+</div><!-- REPLACE_WITH_REAL_PAGE_TEMPLATE -->

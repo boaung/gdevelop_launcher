@@ -1,6 +1,6 @@
 app_name = "gdevelop_launcher"
 app_title = "GDevelop Launcher"
-app_publisher = "You"
+app_publisher = "Bo Aung"
 app_description = "Host GDevelop HTML5 games in Frappe"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"

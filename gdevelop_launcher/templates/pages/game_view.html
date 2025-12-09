@@ -1,1 +1,7 @@
-<!-- REPLACE_WITH_REAL_PAGE_TEMPLATE -->
+{% if doc and doc.index_url %}
+<div style="width:100%; height:90vh;">
+<iframe src="{{ doc.index_url }}" style="width:100%; height:100%; border:none;" sandbox="allow-scripts allow-same-origin"></iframe>
+</div>
+{% else %}
+<p>Game not ready.</p>
+{% endif %}

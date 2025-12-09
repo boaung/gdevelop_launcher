@@ -1,0 +1,2 @@
+include README.md
+recursive-include gdevelop_launcher *.json *.html *.js
